@@ -1,0 +1,5 @@
+bin/* text eol=lf
+*.sh   text eol=lf
+*.rb   text eol=lf
+Rakefile text eol=lf
+Gemfile* text eol=lf
