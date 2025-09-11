@@ -6,12 +6,8 @@
   ],
   "environments": {
     "review": {
-      "addons": [ "heroku-postgresql" ],
-      "scripts": { "postdeploy": "bundle exec rails db:schema:load" },
-      "env": {
-        "RAILS_ENV": "review",
-        "DISABLE_DATABASE_ENVIRONMENT_CHECK": "1"
-      }
+      "addons": ["heroku-postgresql"],
+      "scripts": { "postdeploy": "bundle exec rails db:schema:load" }
     }
   }
 }
