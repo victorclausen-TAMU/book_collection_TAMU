@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: workspace_production
-  username: workspace
-  password: <%= ENV["WORKSPACE_DATABASE_PASSWORD"] %>
+  url: <%= ENV.fetch("DATABASE_URL") %>
